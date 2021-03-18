@@ -2,81 +2,123 @@
 <html lang="en-US">
 
 <head>
-	<title>Coders Coffeehouse</title>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Coders Coffeehouse, Dublin based coffeehouse offering free unlimited wifi and quality caffeine to fuel your code.">
+	<meta name="keywords" content="coffeehouse, coffee, developers cafe, free wifi, dublin">
+	<meta name="author" content="Coders Coffeehouse">
+
+  <title>Coders Coffeehouse</title>
+  <style>
+    h1 {
+    color:brown;
+    }
+
+    p {
+      color: white;
+    }
+
+    header {
+      background-color: black;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    #coffee-box{
+      background-color: brown;
+    }
+
+    #tea-box {
+      background-color: #6f4e37;
+    }
+
+    #cold-drinks-box {
+      background-color: chocolate;
+    }
+
+  </style>
+
 </head>
 
 <body>
 
-	<div id="home">
+	<header id="home">
 		<h1>Welcome to Coders Coffeehouse!</h1>
 		<p>Turning caffeine into code since 1999.</p>
-	</div>
+    
+  </header>
 
 	<hr>
 
-	<a href="#home">Home</a>
-	<a href="#drinks">Drinks Menu</a>
-	<a href="#contact">Contact</a>
-	<a href="form.html">Win Free Coffee</a>
+  <nav>
+    <a href="#home" aria-label="Go to the top of the page.">Home</a>
+    <a href="#drinks" aria-label="Go to drinks menu section.">Drinks Menu</a>
+    <a href="#contact" aria-label="Go to contact information section.">Contact</a>
+    <a href="form.html" aria-label="Fill in our survey for your chance to win free coffee">Win Free Coffee</a>
+  </nav>
+    <section></section>
+      <div>
+          <h2>Reasons to love us</h2>
+          <ol type="marker">
+            <li>Free unlimited wifi</li>
+            <li>Charging outlets with every table</li>
+            <li>High quality coffee to fuel your code</li>
+          </ol>
+        </div>
 
-	<div>
-		<h2>Reasons to love us</h2>
-		<ol type="I">
-			<li>Free unlimited wifi</li>
-			<li>Charging outlets with every table</li>
-			<li>High quality coffee to fuel your code</li>
-		</ol>
-	</div>
+        <img src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/coders-coffeehouse-project-1.jpg" 
+            alt="Cafe table with laptop and coffee" width="400">
 
-	<img src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/coders-coffeehouse-project-1.jpg" 
-	    alt="Cafe table with laptop and coffee" width="400">
+        <img src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/coffeehouse.jpg" alt="Inside Coders Coffeehouse" width="400">
+    </section>   
+ 
+    <section id="drinks">
+      <h2>Drinks Menu</h2>
 
-	<img src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/coffeehouse.jpg" alt="Inside Coders Coffeehouse" width="400">
+      <div id="coffee-box">
+        <h3>Coffee</h3>
+          <ul>
+            <li>Latte</li>
+            <li>Americano</li>
+            <li>Cappuccino</li>
+            <li>Espresso</li>
+            <li>Irish Coffee</li>
+            <li>Macchiato</li>
+            <li>Flat White</li>
+          </ul>
+      </div>
 
-  <div id="drinks">
-    <h2>Drinks Menu</h2>
-
-    <div>
-      <h3>Coffee</h3>
+      <div id="tea-box">
+        <h3>Tea</h3>
         <ul>
-          <li>Latte</li>
-          <li>Americano</li>
-          <li>Cappuccino</li>
-          <li>Espresso</li>
-          <li>Irish Coffee</li>
-          <li>Macchiato</li>
-          <li>Flat White</li>
+          <li>Earl Grey</li>
+          <li>Green tea</li>
+          <li>Lemon tea</li>
+          <li>Peppermint tea</li>
+          <li>Ginger tea</li>
+          <li>Mint tea</li>
         </ul>
-    </div>
+      </div>
 
-    <div>
-      <h3>Tea</h3>
+      <div id="cold-drinks-box">
+          <h3>Cold drinks</h3>
       <ul>
-        <li>Earl Grey</li>
-        <li>Green tea</li>
-        <li>Lemon tea</li>
-        <li>Peppermint tea</li>
-        <li>Ginger tea</li>
-        <li>Mint tea</li>
+        <li>Iced coffee</li>
+        <li>Ice Tea</li>
+        <li>Spring water</li>
+        <li>Soft drinks
+          <ul> 
+            <li>Coca Cola</li>
+            <li>Fanta</li>
+            <li>7up</li>
+          </ul>
+        </li>
       </ul>
-    </div>
-
-    <div>
-      <h3>Cold drinks</h3>
-  <ul>
-    <li>Iced coffee</li>
-    <li>Ice Tea</li>
-    <li>Spring water</li>
-    <li>Soft drinks
-      <ul> 
-        <li>Coca Cola</li>
-        <li>Fanta</li>
-        <li>7up</li>
-      </ul>
-    </li>
-  </ul>
-    </div>
-  </div>
+      </div>
+  
+    </section>
 
   <div id="contact">
     <h2>Contact</h2>
@@ -104,12 +146,12 @@
     <h3>Get in touch</h3>
 
     <div>
-      <span style="font-weight: bold;">Phone: </span>
-      <span>012 345 678 910</span>
+      <span class="bold">Phone: </span>
+      <span >012 345 678 910</span>
     </div>
     <div>
-      <span style="font-weight: bold;">Email: </span>
-      <span>email@coderscoffeehouse.com</span>
+      <span class="bold">Email: </span>
+      <span >email@coderscoffeehouse.com</span>
     </div>
 
 
@@ -119,10 +161,14 @@
 
   <iframe src="https://bit.ly/2QVfkiy" height="300" width="100%"></iframe>
 
-	<a href="https://www.facebook.com" target="_blank" rel="noopener">Find us on Facebook</a>
-	<a href="https://www.instagram.com" target="_blank" rel="noopener">Find us on Instagram</a>
-	<a href="https://www.twitter.com" target="_blank" rel="noopener">Find us on Twitter</a>
+  <footer>
 
+    <a href="https://www.facebook.com" target="_blank" rel="noopener">Find us on Facebook</a>
+    <a href="https://www.instagram.com" target="_blank" rel="noopener">Find us on Instagram</a>
+    <a href="https://www.twitter.com" target="_blank" rel="noopener">Find us on Twitter</a>
+    <p>Copyright © Coders Coffeehouse 2021</p>
+ 
+  </footer>
 </body>
 
 </html>

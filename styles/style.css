@@ -1,5 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Merienda+One|Open+Sans&display=swap');
+
+body {
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+h1,h2,h3 {
+	font-family: 'Merienda One', 'Brush Script MT', cursive;
+}
+
 h1 {
-	color: brown;
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: xx-large;
+}
+
+header {
+	color: beige;
 }
 
 header > p {
@@ -8,6 +26,48 @@ header > p {
 
 header {
 	background-color: black;
+}
+
+.page-header {
+    height: 50vh;	
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-white {
+	color: #FFFFFF;
+}
+
+.text-uppercase {
+	 text-transform: uppercase;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+strong {
+	font-size: 1.3rem;
+}
+
+small {
+	font-style: italic;
+}
+
+nav > a {
+	color: beige;
+	margin: 1rem;
+	text-decoration: none;
+}
+
+nav > a:hover {
+	color: silver;
 }
 
 .bold {
@@ -24,6 +84,10 @@ header {
 
 #cold-drinks-box {
 	background-color: chocolate;
+}
+
+.drinks-box {
+	width: 33%;
 }
 
 a:hover {
@@ -45,6 +109,7 @@ footer > a {
 	color: beige;
 	text-decoration: none;
 	padding: 0 15px;
+	font-size: 0.8rem;
 }
 
 footer > p {
@@ -61,7 +126,11 @@ input[type=submit] {
 }
 
 form {
-  width: 700px;
+	width: 700px;
 }
 
+legend {
+	font-size: large;
+	text-transform: uppercase;
+}
     
